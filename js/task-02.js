@@ -6,3 +6,29 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const tempList = document.querySelector("#ingredients")
+const fragment = document.createDocumentFragment()
+
+for (const ingredient of ingredients) {
+  const liEl = document.createElement("LI");
+  liEl.textContent = ingredient;
+  liEl.classList.add("item");
+  fragment.append(liEl);
+}
+
+tempList.append(fragment);
+ 
+ 
+
+// ..!--------
+
+// // Напиши скрипт, який для кожного елемента 
+// масиву ingredients:
+
+// // Створить окремий елемент <li>. Обов'язково 
+// використовуй метод document.createElement().
+// // Додасть назву інгредієнта як його текстовий вміст.
+// // Додасть елементу клас item.
+// // Після чого, вставить усі <li> 
+// за одну операцію у список ul#ingredients.

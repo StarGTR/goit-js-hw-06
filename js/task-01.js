@@ -1,9 +1,6 @@
 
- 
- //  =====================
 const categoriesList = document.getElementById("categories");
 // console.log("🚀 ", categoriesList)
-
 
 const newArray = categoriesList.children
 // console.log("🚀 ~ newArray:", newArray)
@@ -12,7 +9,7 @@ console.log(`Number of categories: ${newArray.length}`)
 
 
 const subCatList = categoriesList.querySelectorAll(".item");
-console.log("🚀subCatList", subCatList)
+// console.log("🚀subCatList", subCatList)
  
 
 subCatList.forEach( item => 
