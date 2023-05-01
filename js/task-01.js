@@ -14,8 +14,8 @@ const subCatList = categoriesList.querySelectorAll(".item");
 
 subCatList.forEach( item => 
 {
-    const elementName = item.querySelector('h2').textContent;
-    const elementsCount = item.querySelectorAll("li").length; 
+    const elementName = item.firstElementChild.textContent;
+    const elementsCount = item.lastElementChild.children.length; 
     
     console.log(`Category: ${elementName}`);
     console.log(`Elements: ${elementsCount}`);

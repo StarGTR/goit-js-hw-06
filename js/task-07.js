@@ -2,19 +2,14 @@ const fontInd = document.querySelector("#text")
  
 const currentFont = document.querySelector("#font-size-control");
  
- const currentTempFont = currentFont.getAttribute("font-size-control");
-    console.log("🚀 ~ file: task-07.js:14 ~ fontChanger ~ currentTempFont:", currentTempFont)
+//  const currentTempFont = currentFont.getAttribute("font-size-control");
+//     console.log("🚀 ~ file: task-07.js:14 ~ fontChanger ~ currentTempFont:", currentTempFont)
     
-//     currentFont.addEventListener ("input", fontTracker)
-// function fontTracker(event) {
-//    console.log(event.target.value)  
-// }
-
 
 currentFont.addEventListener ("input", fontChanger)
-
+ 
 function fontChanger(event) {
-    fontInd.style.fontSize=`${event.target.value}px`
+    fontInd.style.fontSize=`${event.currentTarget.value}px`
 }
 
 

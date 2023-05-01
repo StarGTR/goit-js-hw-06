@@ -3,10 +3,16 @@ const nameIn = document.querySelector("#name-input");
 
 const nameOut = document.querySelector("#name-output");
 
+const outputNameText = nameOut.textContent;
+
 nameIn.addEventListener("input", addDataFunct);
 
 function addDataFunct(event) {
-nameOut.textContent = event.currentTarget.value;
+    nameOut.textContent = event.currentTarget.value;
+    
+    event.currentTarget.value.trim() === ""?
+      nameOut.textContent = outputNameText:
+    nameOut.textContent = event.currentTarget.value
 }
 
 
